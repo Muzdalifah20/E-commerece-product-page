@@ -119,7 +119,7 @@
             <a href="#"
               ><img
                 src="./assets/images/icon-cart.svg"
-                alt=""
+                alt="user cart image"
                 width="22"
                 height="20"
             /></a>
@@ -135,6 +135,41 @@
             /></a>
           </li>
         </ul>
+        <div class="topnav__cart">
+          <p class="topnav__cart-title">Cart</p>
+          <p class="topnav__cart-empty" hidden>Your cart is empty</p>
+          <div class="topnav__cart-act">
+            <div class="topnav__cart-details">
+              <img
+                class="topnav__cart-image"
+                src="./assets/images/image-product-1-thumbnail.jpg"
+                alt=""
+                width="176"
+                height="176"
+              />
+              <div class="topnav__cart-content">
+                <p class="topnav__cart-info">
+                  fall limited edition sneakers
+                  <span class="topnav__cart-price" id="cartPrice">
+                    $125.00 x 3
+                    <span class="topnav__cart-total" id="cartTotal">
+                      $375.00</span
+                    >
+                  </span>
+                </p>
+              </div>
+              <button type="button" aria-label="delete">
+                <img
+                  src="./assets/images/icon-delete.svg"
+                  alt=""
+                  width="14"
+                  height="16"
+                />
+              </button>
+            </div>
+            <button class="topnav__cart-checkout-btn">Checkout</button>
+          </div>
+        </div>
       </nav>
     </header>
 
