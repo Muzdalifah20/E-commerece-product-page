@@ -64,9 +64,15 @@ function handleBtnCart() {
   cartDiv.toggleAttribute("hidden");
 }
 
+function deleteCartContent() {
+  totalProductCount = 0;
+  productCount.textContent = totalProductCount;
+  updateCartUi();
+}
+
 btnDecrease?.addEventListener("click", handleDecrement);
 btnIncrease?.addEventListener("click", handleIncrement);
 btnAddTocart?.addEventListener("click", updateCartUi);
-btnDelete?.addEventListener("click", updateEmptyCartUi);
+btnDelete?.addEventListener("click", deleteCartContent);
 btnCart?.addEventListener("click", handleBtnCart);
 document.addEventListener("DOMContentLoaded", hideCartDiv);
